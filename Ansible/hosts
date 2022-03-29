@@ -1,0 +1,22 @@
+# This is the default ansible 'hosts' file.
+#
+# It should live in /etc/ansible/hosts
+#
+#   - Comments begin with the '#' character
+#   - Blank lines are ignored
+#   - Groups of hosts are delimited by [header] elements
+#   - You can enter hostnames or ip addresses
+#   - A hostname/ip can be a member of multiple groups
+
+# A collection of hosts belonging to the 'webservers' group
+
+[webservers]
+10.0.0.6 ansible_python_interpreter=/usr/bin/python3
+10.0.0.7 ansible_python_interpreter=/usr/bin/python3
+
+# A collection of hosts belonging to the 'elk' group
+
+[elk]
+10.1.0.4 ansible_python_interpreter=/usr/bin/python3
+
+

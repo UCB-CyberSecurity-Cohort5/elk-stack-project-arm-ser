@@ -1,0 +1,44 @@
+---
+- name: elk config
+  hosts: elk
+  remote_user: redadmin
+  become: true
+  tasks:
+    - name: docker.io installation
+      apt:
+        update_cache: yes
+        name: docker.io
+        state: present
+
+    - name: pip3 installation
+      apt:
+        name: python3-pip
+        state: present
+ 
+    - name: docker module installation
+      pip:
+        name: docker
+        state: present
+ 
+    - name: use more memory
+      sysctl:
+        name: vm.max_map_count
+        value: "262144"
+        state: present
+        reload: yes
+
+    - name: download and enable docker elk container
+      docker_container:
+        name: elk
+        image: sebp/elk:761
+        state: started
+        restart_policy: always
+        published_ports:
+          - 5601:5601
+          - 9200:9200
+          - 5044:5044
+
+    - name: enable docker service
+      systemd:
+        name: docker
+        enabled: yes
