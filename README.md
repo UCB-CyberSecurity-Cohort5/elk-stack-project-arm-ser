@@ -38,7 +38,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
         state: present
         reload: yes
 
-    - name: download and enable docker elk container
+    - name: elk container
       docker_container:
         name: elk
         image: sebp/elk:761
@@ -49,11 +49,12 @@ These files have been tested and used to generate a live ELK deployment on Azure
           - 9200:9200
           - 5044:5044
 
-    - name: enable docker service
+    - name: docker service enable
       systemd:
         name: docker
         enabled: yes
 ```
+![elk_playbook_output]
 
 This document contains the following details:
 - Description of the Topology
@@ -84,6 +85,7 @@ The configuration details of each machine may be found below.
 | ELK Server| Gateway  | 10.1.0.4   | Linux            |
 | Web-1     | Gateway  | 10.0.0.6   | Linux            |
 | Web-2     | Gateway  | 10.0.0.7   | Linux            |
+| Web-3     | Gateway  | 10.0.0.8   | Linux            |
 
 ### Access Policies
 
@@ -100,10 +102,11 @@ A summary of the access policies in place can be found in the table below.
 
 | Name      | Publicly Accessible | Allowed IP Addresses |
 |-----------|---------------------|----------------------|
-| Jump Box  | Yes                 | ADMINS IP ADDRESS    |
-| ELK Server| No                  | 10.0.0.4             |
+| Jump Box  | Yes                 | ADMINS IP            |
+| ELK Server| No                  | 10.0.0.4 & ADMINS IP |
 | Web-1     | No                  | 10.0.0.4             |
 | Web-2     | No                  | 10.0.0.4             |
+| Web-3     | No                  | 10.0.0.4             |
 
 ### Elk Configuration
 
@@ -131,6 +134,7 @@ This ELK server is configured to monitor the following machines:
 |-----------|--------------|
 | Web-1     | 10.0.0.6     |
 | Web-2     | 10.0.0.7     |
+| Web-3     | 10.0.0.8     |
 
 We have installed the following Beats on these machines:
 - Filebeat, Microbeat
