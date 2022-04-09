@@ -54,6 +54,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
         name: docker
         enabled: yes
 ```
+Result of running ansible playbook
 ![elk_playbook_output](https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-arm-ser/blob/cf6032e47c46c19536369c7cfcc081cd6c2779ac/Diagrams/elk_playbook_output.png)
 
 This document contains the following details:
