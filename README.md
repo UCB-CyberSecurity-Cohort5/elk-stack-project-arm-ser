@@ -121,7 +121,7 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 - Powerful: can work with very complex models
 - Flexible: customizes and orchestrates entire application environment
 
-Ansible Config File
+Ansible hosts File  
 ![ansible_hosts](https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-arm-ser/blob/c29706e8d7cf7f42343a1e71b2f9bd3bdad27697/Diagrams/ansible_hosts.png)
 
 The playbook implements the following tasks:
