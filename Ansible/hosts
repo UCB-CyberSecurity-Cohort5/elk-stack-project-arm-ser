@@ -13,10 +13,12 @@
 [webservers]
 10.0.0.6 ansible_python_interpreter=/usr/bin/python3
 10.0.0.7 ansible_python_interpreter=/usr/bin/python3
+10.0.0.8 ansible_python_interpreter=/usr/bin/python3
 
 # A collection of hosts belonging to the 'elk' group
 
 [elk]
 10.1.0.4 ansible_python_interpreter=/usr/bin/python3
+
 
 
