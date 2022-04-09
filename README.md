@@ -4,7 +4,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![network diagram](https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-arm-ser/blob/ea440d70582a0f39c7d10b269577732ce3115d83/Diagrams/network%20diagram.jpg)
+![network diagram](https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-arm-ser/blob/cf6032e47c46c19536369c7cfcc081cd6c2779ac/Diagrams/network_diagram.jpg)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreateAnsible/elk_playbook.yml the entire deployment pictured above. Alternatively, select portions of the YML file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -54,7 +54,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
         name: docker
         enabled: yes
 ```
-![elk_playbook_output]
+![elk_playbook_output](https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-arm-ser/blob/cf6032e47c46c19536369c7cfcc081cd6c2779ac/Diagrams/elk_playbook_output.png)
 
 This document contains the following details:
 - Description of the Topology
@@ -92,7 +92,7 @@ The configuration details of each machine may be found below.
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Jump Box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- `ADMINS IP ADDRESS`
+- `ADMINS IP`
 
 Machines within the network can only be accessed by Jump Box Provisioners.
 - ELK VM is accessible from the Jump Box with the IP address:
@@ -115,6 +115,9 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 - Simple: no special coding skills needed
 - Powerful: can work with very complex models
 - Flexible: customizes and orchestrates entire application environment
+
+Ansible Config File
+![ansible_hosts](https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-arm-ser/blob/c29706e8d7cf7f42343a1e71b2f9bd3bdad27697/Diagrams/ansible_hosts.png)
 
 The playbook implements the following tasks:
 - Install docker.io
