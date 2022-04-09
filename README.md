@@ -6,7 +6,7 @@ The files in this repository were used to configure the network depicted below.
 
 ![network diagram](https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-arm-ser/blob/cf6032e47c46c19536369c7cfcc081cd6c2779ac/Diagrams/network_diagram.jpg)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreateAnsible/elk_playbook.yml the entire deployment pictured above. Alternatively, select portions of the YML file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreateAnsible/elk_playbook.yml the entire deployment pictured above. Alternatively, select portions of the YML file may be used to install only certain pieces of it, such as elk stack.
 
 ```yml
 ---
@@ -55,6 +55,10 @@ These files have been tested and used to generate a live ELK deployment on Azure
         enabled: yes
 ```
 Result of running ansible playbook
+```bash
+ansible-playbook /etc/ansible/elk_playbook.yml
+```  
+  
 ![elk_playbook_output](https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-arm-ser/blob/cf6032e47c46c19536369c7cfcc081cd6c2779ac/Diagrams/elk_playbook_output.png)
 
 This document contains the following details:
