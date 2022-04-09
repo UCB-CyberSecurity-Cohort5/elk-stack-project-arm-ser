@@ -4,7 +4,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![network diagram]()
+![network diagram](https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-arm-ser/blob/5bb0ed4fc392025e38ad607e1b2ffa28697482db/Diagrams/network_diagram_ready.jpg)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreateAnsible/elk_playbook.yml the entire deployment pictured above. Alternatively, select portions of the YML file may be used to install only certain pieces of it, such as elk stack.
 
