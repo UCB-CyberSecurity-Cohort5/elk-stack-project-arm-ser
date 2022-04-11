@@ -4,7 +4,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![network diagram](https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-arm-ser/blob/5bb0ed4fc392025e38ad607e1b2ffa28697482db/Diagrams/network_diagram_ready.jpg)
+![network diagram]()
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreateAnsible/elk_playbook.yml the entire deployment pictured above. Alternatively, select portions of the YML file may be used to install only certain pieces of it, such as elk stack.
 
@@ -84,13 +84,13 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 The configuration details of each machine may be found below.
 
-| Name      | Function | IP Address | Operating System |
-|-----------|----------|------------|------------------|
-| Jump Box  | Gateway  | 10.0.0.4   | Linux            |
-| ELK Server| Gateway  | 10.1.0.4   | Linux            |
-| Web-1     | Gateway  | 10.0.0.6   | Linux            |
-| Web-2     | Gateway  | 10.0.0.7   | Linux            |
-| Web-3     | Gateway  | 10.0.0.8   | Linux            |
+| Name      | Function | Private IP Address | Public IP Address | Operating System |
+|-----------|----------|--------------------|-------------------|------------------|
+| Jump Box  | Gateway  | 10.0.0.4           | 104.45.225.34     | Ubuntu 18.04     |
+| ELK Server| Gateway  | 10.1.0.4           | 20.127.3.81       | Ubuntu 18.04     |
+| Web-1     | Gateway  | 10.0.0.6           | 13.64.110.152     | Ubuntu 18.04     |
+| Web-2     | Gateway  | 10.0.0.7           | 13.64.110.152     | Ubuntu 18.04     |
+| Web-3     | Gateway  | 10.0.0.8           | 13.64.110.152     | Ubuntu 18.04     |
 
 ### Access Policies
 
@@ -105,13 +105,13 @@ Machines within the network can only be accessed by Jump Box Provisioners.
 
 A summary of the access policies in place can be found in the table below.
 
-| Name      | Publicly Accessible | Allowed IP Addresses |
-|-----------|---------------------|----------------------|
-| Jump Box  | Yes                 | ADMINS IP            |
-| ELK Server| No                  | 10.0.0.4 & ADMINS IP |
-| Web-1     | No                  | 10.0.0.4             |
-| Web-2     | No                  | 10.0.0.4             |
-| Web-3     | No                  | 10.0.0.4             |
+| Name          | Publicly Accessible | Allowed IP Addresses |
+|---------------|---------------------|----------------------|
+| Jump Box      | Yes                 | ADMINS IP            |
+| ELK Server    | No                  | 10.0.0.4 & ADMINS IP |
+| Web-1         | No                  | 10.0.0.4             |
+| Web-2         | No                  | 10.0.0.4             |
+| Web-3         | No                  | 10.0.0.4             |
 
 ### Elk Configuration
 
@@ -138,11 +138,11 @@ The following screenshot displays the result of running `docker ps` after succes
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 
-| Name      | IP Addresses |
-|-----------|--------------|
-| Web-1     | 10.0.0.6     |
-| Web-2     | 10.0.0.7     |
-| Web-3     | 10.0.0.8     |
+| Name      | IP Addresses | Public IP Address |
+|-----------|--------------|-------------------|
+| Web-1     | 10.0.0.6     | 13.64.110.152     |
+| Web-2     | 10.0.0.7     | 13.64.110.152     |
+| Web-3     | 10.0.0.8     | 13.64.110.152     |
 
 We have installed the following Beats on these machines:
 - Filebeat, Microbeat
