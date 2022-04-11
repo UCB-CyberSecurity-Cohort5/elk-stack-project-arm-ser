@@ -4,7 +4,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![network diagram]()
+![network diagram](https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-arm-ser/blob/9389406d6a030ca60add02d1b043d6efb3b49430/Diagrams/network_diagram.jpg)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreateAnsible/elk_playbook.yml the entire deployment pictured above. Alternatively, select portions of the YML file may be used to install only certain pieces of it, such as elk stack.
 
@@ -186,3 +186,5 @@ ansible-playbookfilebeat_playbook.yml
 ansible-playbookmetricbeat-playbook.yml
 ```
 - Check that the ELK server is running: http://[Host IP]/app/kibana#/home
+- If everything is done correctly, you will be greeded wity Kibanas home page
+![kibana](https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-arm-ser/blob/154471aaf329425afad6637159f3e0b949a0b4f6/Diagrams/kibana.png)
