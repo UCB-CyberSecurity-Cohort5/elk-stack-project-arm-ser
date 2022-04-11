@@ -189,6 +189,6 @@ ansible-playbookmetricbeat-playbook.yml
 
 If everything is done correctly, 
 - you will be greeded wity Kibanas home page when accessing http://[Host IP]/app/kibana#/home
-![kibana](https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-arm-ser/blob/154471aaf329425afad6637159f3e0b949a0b4f6/Diagrams/kibana.png)
+<img src="https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-arm-ser/blob/154471aaf329425afad6637159f3e0b949a0b4f6/Diagrams/kibana.png" width="600" />
 - you will see DVWA s home page (default credentials admin/password) when accessing  http://[Host IP/login.php
-![dvwa](https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-arm-ser/blob/83bd5d8c954ecf8222c745f8b5942b6012e63c93/Diagrams/dvwa_home.png)
+<img src="https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-arm-ser/blob/83bd5d8c954ecf8222c745f8b5942b6012e63c93/Diagrams/dvwa_home.png" width="600" />
