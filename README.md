@@ -40,7 +40,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
     - name: elk container
       docker_container:
-        name: elk
+        name: elkhttps://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-arm-ser/blob/83bd5d8c954ecf8222c745f8b5942b6012e63c93/Diagrams/dvwa_home.png
         image: sebp/elk:761
         state: started
         restart_policy: always
@@ -186,5 +186,9 @@ ansible-playbookfilebeat_playbook.yml
 ansible-playbookmetricbeat-playbook.yml
 ```
 - Check that the ELK server is running: http://[Host IP]/app/kibana#/home
-- If everything is done correctly, you will be greeded wity Kibanas home page
+
+If everything is done correctly, 
+- you will be greeded wity Kibanas home page when accessing http://[Host IP]/app/kibana#/home
 ![kibana](https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-arm-ser/blob/154471aaf329425afad6637159f3e0b949a0b4f6/Diagrams/kibana.png)
+- you will see DVWA s home page (default credentials admin/password) when accessing  http://[Host IP/login.php
+![dvwa](https://github.com/UCB-CyberSecurity-Cohort5/elk-stack-project-arm-ser/blob/83bd5d8c954ecf8222c745f8b5942b6012e63c93/Diagrams/dvwa_home.png)
